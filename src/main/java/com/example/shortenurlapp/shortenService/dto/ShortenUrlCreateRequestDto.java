@@ -1,4 +1,4 @@
-package com.example.shortenurlapp.dto;
+package com.example.shortenurlapp.shortenService.dto;
 
 import javax.validation.constraints.NotNull;
 import lombok.Getter;

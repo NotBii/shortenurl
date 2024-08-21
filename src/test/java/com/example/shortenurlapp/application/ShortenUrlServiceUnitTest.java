@@ -3,11 +3,11 @@ package com.example.shortenurlapp.application;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-import com.example.shortenurlapp.domain.ShortenUrl;
-import com.example.shortenurlapp.dto.ShortenUrlCreateRequestDto;
+import com.example.shortenurlapp.shortenService.domain.ShortenUrl;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateRequestDto;
 import com.example.shortenurlapp.exception.LackOfShortenUrlKey;
-import com.example.shortenurlapp.repository.ShortenUrlRepository;
-import com.example.shortenurlapp.service.ShortenUrlService;
+import com.example.shortenurlapp.shortenService.repository.ShortenUrlRepository;
+import com.example.shortenurlapp.shortenService.service.ShortenUrlService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
