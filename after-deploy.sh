@@ -11,12 +11,15 @@ CURRENT_PID=$(pgrep -f $APP_NAME)
 
 if [ -z $CURRENT_PID ]
 then
-  echo "> 서비스가 실행중이지 않음."
+  echo "> service not on process"
 else
   echo "> kill -9 $CURRENT_PID"
   kill -9 $CURRENT_PID
   sleep 5
+
 fi
+echo "> building gradle "
+./gradlew build
 
 echo "> $JAR_PATH 배포"
-nohup java -jar -Dspring.profiles.active=prod $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar $JAR_PATH.jar > /dev/null 2> /dev/null < /dev/null &
