@@ -3,6 +3,10 @@
 REPOSITORY=/home/ubuntu/apps/shorturlapp
 cd $REPOSITORY
 
+echo "> building gradle "
+sudo chmod +x ./gradlew
+sudo ./gradlew build
+
 APP_NAME=shorturlapp
 JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep '.jar' | tail -n 1)
 JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
@@ -18,8 +22,6 @@ else
   sleep 5
 
 fi
-echo "> building gradle "
-./gradlew build
 
 echo "> $JAR_PATH 배포"
-nohup java -jar $JAR_PATH.jar > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar $JAR_PATH &
