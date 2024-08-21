@@ -15,4 +15,4 @@ hooks:
     -location: after-deploy.sh
     timeout: 2000
     runas: root
-#별도 확인 요망!!!!!!!!! 3번째!!!!
+#별도 확인 요망!!!!!!!!! 4번째!!!!
