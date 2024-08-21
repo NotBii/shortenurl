@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/shorturlapp/back
+    destination: /home/ubuntu/apps/shorturlapp
 file_exists_behavior: OVERWRITE
 
 permissions:
