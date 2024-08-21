@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://shortenurldb.cxkm4akgmhfp.ap-northeast-2.rds.amazonaws.com:3306/shortenurldb
+    username: ${db.username}
+    password: ${db.password}
+    driver-class-name: org.mariadb.jdbc.Driver
