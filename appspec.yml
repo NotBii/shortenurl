@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /shorturlapp/back
+  - source: /src
+    destination: /shorturlapp/back/src
+  - source: /.idea
+    destination: /shorturlapp/back/.idea
+
+file_exists_behavior: OVERWRITE
+
