@@ -6,7 +6,7 @@ files:
 file_exists_behavior: OVERWRITE
 
 permissions:
-  -object: /home/ubuntu/shorturlapp
+  -object: /home/ubuntu/apps/shorturlapp
   owner: ubuntu
   group: ubuntu
 
