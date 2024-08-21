@@ -6,13 +6,13 @@ files:
 file_exists_behavior: OVERWRITE
 
 permissions:
-  -object: /home/ubuntu/apps/shorturlapp
-  owner: ubuntu
-  group: ubuntu
+  - object: /home/ubuntu/apps/shorturlapp
+    pattern: '**'
+    owner: ubuntu
+    group: ubuntu
 
 hooks:
   AfterInstall:
-    -location: after-deploy.sh
-    timeout: 2000
-    runas: root
-#별도 확인 요망!!!!!!!!! 진짜 마지막!!!!
+    - location: after-deploy.sh
+      timeout: 2000
+      runas: root
