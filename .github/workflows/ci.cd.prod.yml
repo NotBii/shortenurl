@@ -12,7 +12,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: BE
+        
 
     steps:
       - name: Checkout Github-Action
