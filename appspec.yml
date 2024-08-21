@@ -2,12 +2,17 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /shorturlapp/back
-  - source: /src
-    destination: /shorturlapp/back/src
-  - source: /.idea
-    destination: /shorturlapp/back/.idea
-
+    destination: /home/ubuntu/shorturlapp/back
 file_exists_behavior: OVERWRITE
 
+permissions:
+  -object: /home/ubuntu/shorturlapp
+  owner: ubuntu
+  group: ubuntu
+
+hooks:
+  AfterInstall:
+    -location: after-deploy.sh
+    timeout: 2000
+    runas: root
 #별도 확인 요망!!!!!!!!! 3번째!!!!
