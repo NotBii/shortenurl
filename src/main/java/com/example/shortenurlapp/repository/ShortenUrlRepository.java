@@ -4,4 +4,6 @@ import com.example.shortenurlapp.domain.ShortenUrl;
 
 public interface ShortenUrlRepository {
   void saveShortenUrl(ShortenUrl shortenUrl);
+
+  ShortenUrl findShortenUrlByShortenUrlKey(String shortenUrlKey);
 }
