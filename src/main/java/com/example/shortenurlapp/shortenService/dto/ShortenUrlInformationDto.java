@@ -1,6 +1,6 @@
-package com.example.shortenurlapp.dto;
+package com.example.shortenurlapp.shortenService.dto;
 
-import com.example.shortenurlapp.domain.ShortenUrl;
+import com.example.shortenurlapp.shortenService.domain.ShortenUrl;
 import lombok.Getter;
 
 @Getter

@@ -1,9 +1,9 @@
-package com.example.shortenurlapp.controller;
+package com.example.shortenurlapp.shortenService.controller;
 
-import com.example.shortenurlapp.dto.ShortenUrlCreateRequestDto;
-import com.example.shortenurlapp.dto.ShortenUrlCreateResponseDto;
-import com.example.shortenurlapp.dto.ShortenUrlInformationDto;
-import com.example.shortenurlapp.service.ShortenUrlService;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateRequestDto;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateResponseDto;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlInformationDto;
+import com.example.shortenurlapp.shortenService.service.ShortenUrlService;
 import java.net.URI;
 import java.net.URISyntaxException;
 import javax.validation.Valid;

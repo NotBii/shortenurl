@@ -1,4 +1,4 @@
-package com.example.shortenurlapp.domain;
+package com.example.shortenurlapp.shortenService.domain;
 
 import java.util.Random;
 import lombok.Getter;

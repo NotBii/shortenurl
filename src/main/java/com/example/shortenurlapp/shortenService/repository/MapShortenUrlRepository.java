@@ -1,6 +1,6 @@
-package com.example.shortenurlapp.repository;
+package com.example.shortenurlapp.shortenService.repository;
 
-import com.example.shortenurlapp.domain.ShortenUrl;
+import com.example.shortenurlapp.shortenService.domain.ShortenUrl;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.stereotype.Repository;

@@ -1,12 +1,12 @@
-package com.example.shortenurlapp.service;
+package com.example.shortenurlapp.shortenService.service;
 
-import com.example.shortenurlapp.domain.ShortenUrl;
-import com.example.shortenurlapp.dto.ShortenUrlCreateRequestDto;
-import com.example.shortenurlapp.dto.ShortenUrlCreateResponseDto;
-import com.example.shortenurlapp.dto.ShortenUrlInformationDto;
+import com.example.shortenurlapp.shortenService.domain.ShortenUrl;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateRequestDto;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateResponseDto;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlInformationDto;
 import com.example.shortenurlapp.exception.LackOfShortenUrlKey;
 import com.example.shortenurlapp.exception.NotFoundShortenUrl;
-import com.example.shortenurlapp.repository.ShortenUrlRepository;
+import com.example.shortenurlapp.shortenService.repository.ShortenUrlRepository;
 import java.util.Random;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

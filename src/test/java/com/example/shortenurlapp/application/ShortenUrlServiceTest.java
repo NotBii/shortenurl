@@ -3,10 +3,9 @@ package com.example.shortenurlapp.application;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.example.shortenurlapp.dto.ShortenUrlCreateRequestDto;
-import com.example.shortenurlapp.dto.ShortenUrlCreateResponseDto;
-import com.example.shortenurlapp.service.ShortenUrlService;
-import javax.validation.constraints.AssertTrue;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateRequestDto;
+import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateResponseDto;
+import com.example.shortenurlapp.shortenService.service.ShortenUrlService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
