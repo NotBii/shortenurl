@@ -1,6 +1,6 @@
 package com.example.shortenurlapp.shortenService.dto;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import org.hibernate.validator.constraints.URL;
 
