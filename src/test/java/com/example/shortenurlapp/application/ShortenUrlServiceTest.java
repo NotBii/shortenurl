@@ -1,7 +1,6 @@
 package com.example.shortenurlapp.application;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateRequestDto;
 import com.example.shortenurlapp.shortenService.dto.ShortenUrlCreateResponseDto;
