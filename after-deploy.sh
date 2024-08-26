@@ -5,6 +5,7 @@ cd $REPOSITORY
 
 echo "> building gradle "
 sudo chmod +x ./gradlew
+sudo chmod -R 777 ~/apps/shorturlapp
 sudo ./gradlew build
 
 APP_NAME=shorturlapp
