@@ -26,7 +26,7 @@ jobs:
       - name: set yml file
         uses: microsoft/variable-substitution@v1
         with:
-          files: resources/application.yml
+          files: ${{ secrets.YML_LOCATION }}
         env:
           DATABASE_URL: ${{ secrets.DB_URL }}
           DATABASE_USERNAME: ${{ secrets.DB_ID }}
