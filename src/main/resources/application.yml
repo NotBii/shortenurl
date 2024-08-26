@@ -1,6 +1,9 @@
 spring:
   datasource:
-    url: ${db.url}
-    username: ${db.username}
-    password: ${db.password}
+    jdbc-url: ${{ secrets.DB_URL }}
+    username: ${{ secrets.DB_ID }}
+    password: ${{ secrets.DB_PW }}
     driver-class-name: org.mariadb.jdbc.Driver
+
+  mybatis:
+    mapper-locations: classpath:mapper/**/*.xml
