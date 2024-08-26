@@ -33,9 +33,7 @@ jobs:
           spring.datasource.password: ${{ secrets.DB_PW }}
 
       - name: gradlew
-        run:
-          sed -i "s/D
-          chmod +x ./gradlew
+        run: chmod +x ./gradlew
 
       - name: Gradle build
         run: ./gradlew build
