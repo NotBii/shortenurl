@@ -28,9 +28,9 @@ jobs:
         with:
           files: ${{ secrets.YML_LOCATION }}
         env:
-          DATABASE_URL: ${{ secrets.DB_URL }}
-          DATABASE_USERNAME: ${{ secrets.DB_ID }}
-          DATABASE_PASSWORD: ${{ secrets.DB_PW }}
+          spring.datasource.jdbc-url: ${{ secrets.DB_URL }}
+          spring.datasource.username: ${{ secrets.DB_ID }}
+          spring.datasource.password: ${{ secrets.DB_PW }}
 
       - name: gradlew
         run:
